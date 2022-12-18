@@ -10,7 +10,6 @@ class App extends Component {
 		this.handleBtnClick = this.handleBtnClick.bind(this);
 	};
 	handleBtnClick() {
-		console.log("I am clicked");
 		this.setState({ isShow: true })
 
 	}
@@ -19,8 +18,8 @@ class App extends Component {
 			<div id="main">
 
 				{ /* Do not remove this main div!! */}
-				<button className="click" onClick={this.handleBtnClick}>Click me</button>
-				{this.state.isShow && <p className="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
+				<button id="click" onClick={this.handleBtnClick}>Click me</button>
+				{this.state.isShow && <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
 			</div>
 
 		);
